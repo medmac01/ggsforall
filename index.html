@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;1,700&display=swap" rel="stylesheet">   
     <link href="./build/tailwind.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74be4f90e6.js" crossorigin="anonymous"></script>
     <title>Welcome | GGS4ALL</title>
     <style>
         @font-face {
@@ -19,6 +20,7 @@
 
         body {
             font-family: 'Barlow Condensed', sans-serif;
+            font-size: x-large;
         }
         
 
@@ -27,20 +29,20 @@
 
 </head>
 <body>
-    <nav class="text-gray-400 bg-gray-900 bg-opacity-0 body-font" style="position: fixed;top: 0;overflow: hidden;width: 100%;">
+    <nav id="navbar" class="text-gray-400 bg-gray-900 bg-opacity-0 body-font" style="position: fixed;top: 0;overflow: hidden;width: 100%;">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-large items-center text-white mb-4 md:mb-0">
               <img src="assets/logo.png" alt="GG" srcset="" class="w-10 h-10">
             </svg>
-            <span class="ml-3 text-xl" id="logo-title">GGS4ALL</span>
+            <span class="ml-3 text-3xl" id="logo-title">GGS4ALL</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-white font-large" href="index.html">Home</a>
-            <a class="mr-5 hover:text-white">Deals</a>
-            <a class="mr-5 hover:text-white">Who are we?</a>
-            <a class="mr-5 hover:text-white">Our services</a>
+            <a class="mr-5 hover:text-white text-lg" href="index.html">Home</a>
+            <a class="mr-5 hover:text-white text-lg">Deals</a>
+            <a class="mr-5 hover:text-white text-lg">Who are we?</a>
+            <a class="mr-5 hover:text-white text-lg">Our services</a>
           </nav>
-          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="contact.html">Contact</a> 
+          <button class="inline-flex items-center text-lg bg-gray-800 border-0 py-1 px-3 bg-opacity-30 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="contact.html">Contact</a> 
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -48,8 +50,22 @@
         </div>
     </nav>
       <div id="first" style="width:100% ;height: 100%; max-height: 70%">
-        <img src="assets/purpell.jpg" alt="" srcset="" style="width: 100%; height: auto;">
+        <img src="assets/purpell.jpg" alt="" srcset="" style="width: 100%; height: auto; visibility: visible;">
+        
+
     </div>
+
+    <section class="text-gray-400 bg-gray-900 py-24 body-font">
+        <div class="text-center mb-20">
+            <img src="" alt="">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Gaming made different</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+            <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+        </div>
+    </section>
+
     
 
       <div style="height: auto;"></div>
@@ -89,5 +105,13 @@
           </span>
         </div>
       </footer>
+
+      <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $('#navbar').css("opacity", $(window).scrollTop()/700)
+            })
+        })
+        </script>
 </body>
 </html>
