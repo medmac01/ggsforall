@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;1,700&display=swap" rel="stylesheet">   
     <link href="./build/tailwind.css" rel="stylesheet">
-
+    
     <script src="https://kit.fontawesome.com/74be4f90e6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -208,6 +208,28 @@
             <div class="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
             </div>
         </div>
+      <!-- hadi animation  -->
+        <div ><h1 id="hqq" ></h1></div>
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+        <script type="text/javascript">
+           let animation =anime({
+             targets :'#hqq',
+             translateX :'48%', 
+             autoplay: true
+           })
+           document.querySelector('#hqq').addEventListener('mouseover', () => {animation.play();})
+        </script>
+       <script>
+         var roundLogEl = document.querySelector('#hqq');
+
+let elias=anime({
+  targets: roundLogEl,
+  innerHTML: [0, 10000],
+  easing: 'linear',
+  round: 0.5 // Will round the animated value to 1 decimal
+});
+document.querySelector('#hqq').addEventListener('mouseover', () => {elias.play();})
+       </script>
     </section>
 
     <!-- 7ett hna lkmala mn site dyal tailblocks -->
@@ -257,5 +279,6 @@
             })
         })
         </script>
+
 </body>
 </html>
