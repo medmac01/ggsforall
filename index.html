@@ -327,8 +327,6 @@
         
       <div class="container px-5 py-20 mx-auto">
             <div  class="flex flex-row">
-              <img  class="w-10 rounded mb-16  mr-4" src="assets/ICONS/discount1.png" alt="" srcset="" id="mo" >
-              <p class="text-4xl" style="padding-bottom: 3rem;" id="ma">Top Deals --></p>
                 
                    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
                    <script type="text/javascript">
@@ -504,32 +502,46 @@
 
 
       <!-- hadi animation  -->
-      <div class="flex justify-between pr-6 pl-6">
+      <div class="flex justify-between pr-6 pl-6 m-20">
      
       <div class="">
-        <div class="flex justify-center text-xl font-bold"><h1>Games</h1></div>
-        <img class="w-16 rounded" src="assets/ICONS/gameRemote.png" alt="" srcset="">
-        <div class="flex justify-center text-2xl font-bold"  id="ha" ></div>
+        <div class="flex justify-center">
+          <img class="w-16 rounded" src="assets/ICONS/gameRemote.png" alt="" srcset="">
+        </div>
+        <div class="flex justify-center text-4xl font-bold" id="ha" ></div>
+        <div class="flex justify-center text-xl py-8"><h1><b>Games sold</b> <br> in our store.</h1></div>
+
       </div>
       <div class="">
-        <div class="flex justify-center text-xl font-bold" ><h1>Twitch</h1></div>
+        <div class="flex justify-center">
         <img class="w-16 rounded" src="assets/ICONS/twitch.png" alt="" srcset="">
-        <div class="flex justify-center text-2xl font-bold"  id="hb"></div>
+      </div>
+        <div class="flex justify-center text-4xl font-bold"  id="hb"></div>
+        <div class="flex justify-center text-xl py-8"><h1><b>Twitch streamers</b> <br> use our plateform</h1></div>
       </div>
       <div class="">
-        <div class="flex justify-center text-xl font-bold"><h1>Playstation</h1></div>
+        <div class="flex justify-center">
         <img class="w-16 rounded" src="assets/ICONS/playstation-logotype.png" alt="" srcset="">
-        <div class="flex justify-center text-2xl font-bold" id="hc"></div>
+      </div>
+        <div class="flex justify-center text-4xl font-bold" id="hc"></div>
+        <div class="flex justify-center text-xl py-8"><h1><b>New Sony ® PS5 Available</b></h1></div>
+
       </div>
       <div class="">
-        <div class="flex justify-center text-xl font-bold"><h1>Shop</h1></div>
+        <div class="flex justify-center">
         <img class="w-16 rounded" src="assets/ICONS/shoPp.png" alt="" srcset="">
-        <div class="flex justify-center text-2xl font-bold" id="hd"></div>
+      </div>
+        <div class="flex justify-center text-4xl font-bold" id="hd"></div>
+        <div class="flex justify-center text-xl py-8"><h1><b>Stores</b> <br> in 5 cities.</h1></div>
+
       </div>
       <div class="">
-        <div class="flex justify-center text-xl font-bold"><h1>Tournament</h1></div>
+        <div class="flex justify-center">
         <img class="w-16 rounded" src="assets/ICONS/TOURNAMENT.png" alt="" srcset="">
-        <div class="flex justify-center text-2xl font-bold" id="he"></div>
+      </div>
+        <div class="flex justify-center text-4xl font-bold" id="he"></div>
+        <div class="flex justify-center text-xl py-8"><h1><b>Worldwide Tournaments</b> <br> powered by our plateform.</h1></div>
+
       </div>
      
     </div>
@@ -554,9 +566,9 @@
          var roundLogEl = document.querySelector('#ha');
     let elias=anime({
     targets: roundLogEl,
-    innerHTML: [0, 10000],
+    innerHTML: [0, 1400],
      easing: 'linear',
-     round: 1 // Will round the animated value to 1 decimal  
+     round: 10 // Will round the animated value to 1 decimal  
          });
           document.querySelector('#ha').addEventListener('mouseover', () => {elias.play();})
           document.querySelector('#hb').addEventListener('mouseover', () => {elias.play();})
@@ -570,7 +582,7 @@
           var roundLogEl = document.querySelector('#hb');
      let oussama=anime({
      targets: roundLogEl,
-     innerHTML: [0, 10000],
+     innerHTML: [0, 80],
       easing: 'linear',
       round: 1 // Will round the animated value to 1 decimal  
           });
@@ -586,7 +598,7 @@
           var roundLogEl = document.querySelector('#hc');
      let machrouh=anime({
      targets: roundLogEl,
-     innerHTML: [0, 10000],
+     innerHTML: [0, 1000],
       easing: 'linear',
       round: 1 // Will round the animated value to 1 decimal  
           });
@@ -603,7 +615,7 @@
   var roundLogEl = document.querySelector('#hd');
 let rachid=anime({
 targets: roundLogEl,
-innerHTML: [0, 10000],
+innerHTML: [0, 28],
 easing: 'linear',
 round: 1 // Will round the animated value to 1 decimal  
   });
@@ -620,7 +632,7 @@ round: 1 // Will round the animated value to 1 decimal
   var roundLogEl = document.querySelector('#he');
 let badr=anime({
 targets: roundLogEl,
-innerHTML: [0, 10000],
+innerHTML: [0, 15],
 easing: 'linear',
 round: 1 // Will round the animated value to 1 decimal  
   });
@@ -632,7 +644,6 @@ round: 1 // Will round the animated value to 1 decimal
 
 </script>
     </section>
-<!-- HNAAAAAAA KATSSAAALI ANIMATION -->
 
     <!-- 7ett hna lkmala mn site dyal tailblocks -->
 
@@ -675,13 +686,7 @@ round: 1 // Will round the animated value to 1 decimal
         </div>
       </footer>
       <!-- hady gheer myk 3liha rah makadir walo -->
-      <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                $('#navbar').css("opacity", $(window).scrollTop()/700)
-            })
-        })
-        </script>
+
 
 </body>
 </html>
